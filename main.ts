@@ -1,3 +1,3 @@
-Deno.serve({ port : 8000 }, () => {
+export function handler() {
     return new Response('Welcome...')
-})
+}
