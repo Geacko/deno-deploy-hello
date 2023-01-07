@@ -11,7 +11,9 @@ serve(async () => {
 
     if (response.ok) {
 
-        const xs = await response.json() as {title : string}[]
+        const {
+            result : xs
+        } = await response.json() as { result : {title : string}[] }
         
         for (const x of xs) {
             content += x.title + '\n'
