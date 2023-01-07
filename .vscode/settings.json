@@ -1,0 +1,10 @@
+{
+    "deno.enable": true,
+    "deno.unstable": true,
+    "deno.inlayHints.parameterNames.enabled": "none",
+    "deno.inlayHints.enumMemberValues.enabled": false,
+    "deno.inlayHints.functionLikeReturnTypes.enabled": false,
+    "deno.inlayHints.parameterTypes.enabled": false,
+    "deno.inlayHints.propertyDeclarationTypes.enabled": false,
+    "deno.inlayHints.variableTypes.enabled": false
+}
