@@ -3,16 +3,20 @@ import {
 } from 'https://deno.land/std@0.171.0/http/server.ts'
 
 /** @internal */
-const uri = new URL('index.html', import.meta.url)
+const uri 
+    = new URL( 'index.html' , import.meta.url )
 
 // execute ...
-serve(() => {
+serve(async () => {
     
+    const content 
+        = await Deno.open(uri)
+
     /** @todo */
     // ...
     // ...
     // ...
     
-    return Deno.open( uri ).then(x => new Response(x.readable))
+    return new Response( content.readable )
 
 })
